@@ -1,0 +1,113 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: #a09038;
+    font-family: 'Poppins', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    background: url(./img/e.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+header{
+    display: flex; /* um do lado do outro*/
+    justify-content: right; /* alinha ao centro com espaço nas bordas*/
+    align-items: center; /* Alinha ao centro */
+    padding: 10px; /* Espaço interno */
+    border-bottom: 1px solid white ; /* Cria a borda */
+    margin-bottom: 50px; /* Espaço para baixo */
+    border-color: #a09038; /* Cor da borda */
+}
+
+header ul{
+    display: flex; /* um do lado do outro*/
+    padding: 0;
+    list-style: none; /* Tira a decoração */
+    font-style: italic; /* Define o estilo da fonte */
+    font-weight: 700; /* Grossura da fonte */
+}
+
+header ul li{
+    padding: 5px; /* espaço interno*/
+}
+
+header ul li a{
+    text-decoration: none;
+    transition: 300ms; /* tempo do efeito*/
+}
+
+header ul li a:hover{
+    color: #c0a717; /* a letra muda para essa cor*/
+    text-decoration: underline; /* ufica sublinhado*/
+}
+
+
+.container{
+    text-align: center; /* alinha ao centro */
+}
+
+.container .nome h6{
+    font-size: 20px;
+    padding-right: 27%;
+}
+
+.container .nome h1{
+    font-size: 60px;/* nome central */
+    display: inline-block;
+}
+
+.container .nome h5{
+    font-size: 25px; /* cargo */
+}
+
+#sobre p{
+    max-width: 800px;
+    margin: 0 auto;
+    font-weight: 400;
+}
+.form{
+    width: 40%;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+.form input{
+    width: 50%;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px 0px 0px 5px;
+}
+.form button{
+    width: 15%;
+    padding: 5px 10px;
+    background: linear-gradient(to right, #c0a717 50%, #9c551b 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    color: #FFF;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition: all 300ms ease-out;
+    border-radius: 0px 5px 5px 0px;
+    margin-top: 20px;
+    margin-left: -5px;
+}
+.form button:hover{
+    background-position: left bottom;
+}
+
+footer {
+    text-align: center;
+    padding: 40px 0;
+}
+
+.copyright {
+    color: #FFFFFF;
+    font-size: 13px;
+    margin-top: 20px;
+}
