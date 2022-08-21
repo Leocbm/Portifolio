@@ -1,9 +1,16 @@
+:root {
+    --branco-principal: #FFFFFF;
+    --cinza-secundario: #95999C;
+    --azul-hover: #027368;
+    --preto-cabecalho: #15191C;
+}
+
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    /* color: #a09038; */
-    color: #FFFFFF;
+    color: #a09038;
+    /* color: #FFFFFF; */
     font-family: 'Poppins', sans-serif;
 }
 
@@ -11,12 +18,152 @@ a{
     text-decoration: none;
 }
 
-body{
+/* body{
     background: url(./img/l.jpeg) no-repeat center center fixed;
     background-size: cover;
+} */
+
+
+/* css do cabeçalho */
+.cabecalho {
+    background-color: var(--preto-cabecalho);
+    display: flex; /* um do lado do outro*/
+    justify-content: space-around; /* alinha ao centro com espaço nas bordas*/
+    align-items: center; /* Alinha ao centro */
+    width: 100%;
+    height: 100px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.16);
+    margin-bottom: 50px;
 }
 
-header{
+.cabecalho-logo {
+    width: 100px;
+}
+
+.cabecalho-links {
+    display: flex; /* um do lado do outro*/
+    padding: 0;
+    list-style: none; /* Tira a decoração */
+    font-weight: 700; /* Grossura da fonte */
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: italic;
+}
+
+.cabecalho-item a {
+    padding: 10px 40px; /* espaço interno*/
+    text-decoration: none;
+    transition: 300ms; /* tempo do efeito*/
+    color: var(--cinza-secundario);
+}
+
+.cabecalho-item a:hover{
+    color: var(--azul-hover); /* a letra muda para essa cor*/
+    text-decoration: underline; /* ufica sublinhado*/
+}
+
+
+
+body {
+    background-color: #1D232A;
+}
+
+.main-homepage {
+    width: 100%;
+    /* padding: 50px 0; Espaço para cima */
+    /* height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%; */
+}
+
+.perfil {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    margin: 20px 50px;
+    padding: 3em 0;
+}
+
+.conteudo-perfil {
+    width: 60%;
+    margin: 0 auto;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.perfil img {
+    width: 20%;
+    border-radius: 50%;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.16);
+}
+
+.perfil h2{
+    text-align: center;
+    font-size: 2em; /* 2x o tamanho base */
+    margin: 0;/* margem proporcional a fonte */
+    clear: left;
+    font-weight: 600;
+    color: #FFFFFF;
+}
+
+.perfil h1 {
+    text-align: center;
+    font-size: 4em; /* 2x o tamanho base */
+    margin: 10px 0px;/* margem proporcional a fonte */
+    clear: left;
+    font-weight: 600;
+    color: #FFFFFF;
+}
+
+.perfil h3 {
+    text-align: center;
+    font-size: 1em; /* 2x o tamanho base */
+    margin: 0;/* margem proporcional a fonte */
+    clear: left;
+    font-weight: 600;
+    color: #95999C;
+}
+
+.enviar {
+    width: 40%;
+    margin-top: 40px;
+    padding: 15px 0;
+    background: #038C7F;
+    color: #01403A;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    transition: 1s all;
+    cursor: pointer;
+}
+
+.enviar:hover {
+    background: #027368;
+    transform: scale(1.2);
+}
+
+
+
+
+footer {
+    width: 100%;
+    text-align: center;
+    background: url("img/bg.jpg");
+    padding: 20px 0;
+    margin-top: 50px;
+}
+
+.copyright {
+    color: #FFFFFF;
+    font-size: 13px;
+}
+
+.container {
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+headera{
     display: flex; /* um do lado do outro*/
     justify-content: right; /* alinha ao centro com espaço nas bordas*/
     align-items: center; /* Alinha ao centro */
@@ -24,53 +171,42 @@ header{
     border-bottom: 1px solid white ; /* Cria a borda */
     margin-bottom: 50px; /* Espaço para baixo */
     border-color: #a09038; /* Cor da borda */
+    width: 100%;
 }
 
-header ul{
-    display: flex; /* um do lado do outro*/
-    padding: 0;
-    list-style: none; /* Tira a decoração */
-    font-style: italic; /* Define o estilo da fonte */
-    font-weight: 700; /* Grossura da fonte */
-}
 
-header ul li{
-    padding: 10px 40px; /* espaço interno*/
-}
-
-header ul li a{
-    text-decoration: none;
-    transition: 300ms; /* tempo do efeito*/
-}
-
-header ul li a:hover{
-    color: #c0a717; /* a letra muda para essa cor*/
-    text-decoration: underline; /* ufica sublinhado*/
-}
 
 
 .container{
     text-align: center; /* alinha ao centro */
 }
 
-.container .nome h6{
-    font-size: 18px;
-    padding-right: 27%;
+.nome {
+    font-family: 'Montserrat', sans-serif;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.nome h2{
+    text-align: left;
+    font-size: 2em; /* 2x o tamanho base */
+    margin: 0;/* margem proporcional a fonte */
+    font-weight: 600;
+    color: #FFFFFF;
 }
 
 .container .nome h1{
-    font-size: 60px;/* nome central */
-    display: inline-block;
-}
-
-.container .nome h5{
-    font-size: 25px; /* cargo */
+    font-size: 4em; /* 2x o tamanho base */
+    margin: 0;
+    font-weight: 600;
+    color: #FFFFFF;
 }
 
 #sobre p{
     max-width: 800px;
     margin: 0 auto;
     font-weight: 400;
+    color: var(--branco-principal);
 }
 .form{
     width: 40%;
@@ -110,3 +246,4 @@ footer {
 .copyright {
     font-size: 15px;
 }
+
