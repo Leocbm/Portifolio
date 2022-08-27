@@ -202,11 +202,12 @@ headera{
     color: #FFFFFF;
 }
 
-#sobre p{
-    max-width: 800px;
+.sobre p{
+    max-width: 850px;
     margin: 0 auto;
     font-weight: 400;
     color: var(--branco-principal);
+    
 }
 .form{
     width: 40%;
