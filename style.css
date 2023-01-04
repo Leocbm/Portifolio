@@ -84,11 +84,13 @@ body {
 }
 
 .principal h1 {
+    display: inline-block;
     text-align: center;
     font-size: 4em;
     line-height: 1.5;
     font-weight: 600;
     color: #FFFFFF;
+    padding-right: 10px;
 }
 
 .principal h3 {
@@ -99,7 +101,7 @@ body {
     color: #95999C;
 }
 
-.enviar {
+.botao {
     width: 60%;
     margin-top: 40px;
     padding: 15px 0;
@@ -113,7 +115,7 @@ body {
     cursor: pointer;
 }
 
-.enviar:hover {
+.botao:hover {
     background: #027368;
     transform: scale(1.2);
 }
@@ -241,6 +243,10 @@ footer {
 
 .imagem-projetos:hover {
     opacity: 0.3;
+}
+
+.imagem-python, .imagem-progresso {
+    box-shadow: none;
 }
 
 .produto-descricao {
