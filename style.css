@@ -15,18 +15,64 @@ body {
     background-color: #1D232A;
 }
 
-.logo-titulo {
-    width: 500px;
+header {
+    background-color: var(--preto-cabecalho);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.16);
+    height: 150px;
+}
+
+.cabecalho {
+    position: relative;
+    width: 940px;
+    height: 15vh;
+    margin: 0 auto;
+}
+
+.cabecalho h1 {
+    height: 150px;
+}
+
+.cabecalho-logo {
+    width: 150px;
+}
+
+nav {
+    position: absolute;
+    top: 7.5vh;
+    right: 0px;
+}
+
+nav li {
+    display: inline;
+    margin-left: 30px;
+    font-weight: 700;
+    font-size: 22px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: italic;
+}
+
+nav a {
+    text-transform: uppercase;
+    color: var(--cinza-secundario);
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+    transition: 300ms all;
+}
+
+nav a:hover {
+    color: var(--azul-hover);
+    text-decoration: underline;
 }
 
 /* css do cabeçalho */
-.cabecalho {
+/* .cabecalho {
     background-color: var(--preto-cabecalho);
     display: flex;
-    justify-content: space-around; /* alinha ao centro com espaço nas bordas*/
+    justify-content: space-around;
     align-items: center;
     width: 100%;
-    height: 100px;
+    height: 12vh;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.16);
 }
 
@@ -45,25 +91,26 @@ body {
 }
 
 .cabecalho-item a {
-    padding: 10px 40px; /* espaço interno*/
+    padding: 10px 40px;
     text-decoration: none;
-    transition: 300ms; /* tempo do efeito*/
+    transition: 300ms;
     color: var(--cinza-secundario);
 }
 
 .cabecalho-item a:hover{
-    color: var(--azul-hover); /* a letra muda para essa cor*/
-    text-decoration: underline; /* ufica sublinhado*/
-}
+    color: var(--azul-hover);
+    text-decoration: underline;
+} */
 
 /* css conteúdo principal */
 .principal, .container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
     width: 100%;
     margin: 0 auto;
-    height: 77.34vh;
+    height: 80vh;
     padding: 3em 0;
     text-align: center;
     font-family: 'Montserrat', sans-serif;
@@ -71,8 +118,10 @@ body {
 
 .imagem-perfil {
     width: 350px;
+    height: 350px;
     border-radius: 50%;
     box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.16);
+    align-items: center;
 }
 
 .principal h2{
@@ -123,11 +172,11 @@ body {
 /* css footer */
 footer {
     width: 100%;
-    height: 120px;
+    height: 13vh;
     text-align: center;
     background-color: var(--preto-cabecalho);
-    align-items: center;
     box-shadow: -4px -4px 4px rgba(0, 0, 0, 0.16);
+    padding: 0 auto;
 }
 
 .footer-logo {
@@ -140,18 +189,6 @@ footer {
 }
 
 /* css da pagina sobre */
-.container{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 100%;
-    margin: 0 auto;
-    height: 77.34vh;
-    padding: 3em 0;
-    text-align: center;
-    font-family: 'Montserrat', sans-serif;
-    
-}
 
 .assunto {
     /* border: 2px dashed #027368; */
