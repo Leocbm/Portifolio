@@ -4,6 +4,8 @@
     --cinza-secundario: #95999C;
     --azul-hover: #027368;
     --preto-cabecalho: #15191C;
+    --azul-background: #038C7F;
+    --azul-letra: #01403A;
 }
 
 *{
@@ -15,6 +17,7 @@ body {
     background-color: #1D232A;
 }
 
+/* css do cabeçalho */
 header {
     background-color: var(--preto-cabecalho);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.16);
@@ -22,24 +25,16 @@ header {
 }
 
 .cabecalho {
-    position: relative;
-    width: 940px;
-    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    width: 100%;
     margin: 0 auto;
-}
-
-.cabecalho h1 {
-    height: 150px;
 }
 
 .cabecalho-logo {
     width: 150px;
-}
-
-nav {
-    position: absolute;
-    top: 7.5vh;
-    right: 0px;
 }
 
 nav li {
@@ -65,43 +60,6 @@ nav a:hover {
     text-decoration: underline;
 }
 
-/* css do cabeçalho */
-/* .cabecalho {
-    background-color: var(--preto-cabecalho);
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 100%;
-    height: 12vh;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.16);
-}
-
-.cabecalho-logo {
-    width: 100px;
-}
-
-.cabecalho-links {
-    display: flex;
-    padding: 0;
-    list-style: none;
-    font-weight: 700;
-    font-size: 20px;
-    font-family: 'Montserrat', sans-serif;
-    font-style: italic;
-}
-
-.cabecalho-item a {
-    padding: 10px 40px;
-    text-decoration: none;
-    transition: 300ms;
-    color: var(--cinza-secundario);
-}
-
-.cabecalho-item a:hover{
-    color: var(--azul-hover);
-    text-decoration: underline;
-} */
-
 /* css conteúdo principal */
 .principal, .container {
     display: flex;
@@ -118,9 +76,13 @@ nav a:hover {
 
 .imagem-perfil {
     width: 350px;
-    height: 350px;
     border-radius: 50%;
     box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.16);
+    align-items: center;
+}
+
+.introducao {
+    width: 800px;
     align-items: center;
 }
 
@@ -129,7 +91,7 @@ nav a:hover {
     font-size: 2em;
     line-height: 1.5;
     font-weight: 600;
-    color: #FFFFFF;
+    color: var(--branco-principal);
 }
 
 .principal h1 {
@@ -138,7 +100,7 @@ nav a:hover {
     font-size: 4em;
     line-height: 1.5;
     font-weight: 600;
-    color: #FFFFFF;
+    color: var(--branco-principal);
     padding-right: 10px;
 }
 
@@ -147,17 +109,17 @@ nav a:hover {
     font-size: 1em;
     line-height: 1.5;
     font-weight: 600;
-    color: #95999C;
+    color: var(--cinza-secundario);
 }
 
 .botao {
     width: 60%;
     margin-top: 40px;
     padding: 15px 0;
-    background: #038C7F;
-    color: #01403A;
+    background: var(--azul-background);
+    color: var(--azul-letra);
     font-weight: bold;
-    font-size: 18px;
+    font-size: 20px;
     border: none;
     border-radius: 5px;
     transition: 0.5s all;
@@ -165,14 +127,14 @@ nav a:hover {
 }
 
 .botao:hover {
-    background: #027368;
+    background: var(--azul-hover);
     transform: scale(1.2);
 }
 
 /* css footer */
 footer {
     width: 100%;
-    height: 13vh;
+    height: 160px;
     text-align: center;
     background-color: var(--preto-cabecalho);
     box-shadow: -4px -4px 4px rgba(0, 0, 0, 0.16);
@@ -195,6 +157,7 @@ footer {
     border-radius: 10px;
     padding: 10px;
     background: #15191C;
+    width: 800px;
 }
 
 .nome {
@@ -222,6 +185,11 @@ footer {
     line-height: 1.5;
     text-align: center;
     color: #bac2c9;
+}
+
+.botao-sem-espaco {
+    margin-top: 10px;
+    padding: 10px 0;
 }
 
 /* css pagina portifólio */
