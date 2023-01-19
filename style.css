@@ -188,13 +188,15 @@ footer {
     padding: 10px 0;
 }
 
-/* css pagina portifólio */
+/* css pagina projetos */
 .projetos-frontend, .projetos-backend {
     text-align: center;
-    padding: 20px 0 10px 0;
+    padding: 30px 0;
     font-weight: bold;
+    font-weight: 800;
     font-family: 'Montserrat', sans-serif;
-    font-size: 30px;
+    font-size: 2.5em;
+    color: var(--cinza-secundario);
 }
 
 .projetos {
@@ -211,17 +213,17 @@ footer {
     margin: 0 1.5%;
     padding: 30px 15px;
     box-sizing: border-box;
-    border: 3px solid #15191C;
+    border: 3px solid var(--preto-cabecalho);
     border-radius: 10px;
     font-family: 'Montserrat', sans-serif;
 }
 
 .projetos li:hover {
-    border-color: #027368;
+    border-color: var(--azul-background);
 } 
 
 .projetos li:active {
-    border-color: #038C7F;
+    border-color: var(--azul-hover);
 }
 
 .projetos li:hover h2 {
@@ -232,7 +234,7 @@ footer {
     font-size: 28px;
     font-weight: bold;
     margin-bottom: 10px;
-    color: #95999C;
+    color: var(--cinza-secundario);
 }
 
 .imagem-projetos {
@@ -250,18 +252,18 @@ footer {
     box-shadow: none;
 }
 
-.produto-descricao {
+.projeto-descricao {
     font-size: 18px;
     margin-top: 10px;
-    color: #95999C;
+    color: var(--cinza-secundario);
 }
 
 .codigo-projeto, .deploy-projeto {
     width: 70%;
     margin: 5px 0;
     padding: 8px 0;
-    background: #038C7F;
-    color: #01403A;
+    background: var(--azul-background);
+    color: var(--azul-letra);
     font-weight: bold;
     font-size: 18px;
     border: none;
@@ -275,7 +277,7 @@ footer {
 }
 
 .codigo-projeto:hover, .deploy-projeto:hover {
-    background: #027368;
+    background: var(--azul-hover);
     transform: scale(1.1);
 }
 
